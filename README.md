@@ -1,3 +1,6 @@
+link to site
+https://mattheffnt.github.io/QR/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
