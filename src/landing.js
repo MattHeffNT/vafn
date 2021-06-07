@@ -4,8 +4,8 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Contact from './contact';
 import './styles/landing.css';
+
 import {
     BrowserRouter as Router,
     Switch,

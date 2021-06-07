@@ -1,8 +1,10 @@
 import React from 'react';
 import Dictaphone from './Speech.js';
+import Submit from './Submit';
 import Landing from './landing';
 import Contact from './contact';
-import Submit from './Submit';
+
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,8 +28,12 @@ function App() {
             <Route path="/contact" component = {Contact}>
             </Route>
 
-            <Route path="/contact" component = {Submit}>
+            <Route path="/submit" component = {Submit}>
             </Route>
+
+            <Route path="/speech" component = {Dictaphone}>
+            </Route>
+
         </Switch>
       </Router>
     </div>

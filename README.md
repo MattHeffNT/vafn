@@ -1,7 +1,7 @@
 Changing to prototype (wizard of oz) for project
 
 link to site
-https://mattheffnt.github.io/vafn/
+https://mattheffnt.github.io/vafn
 
 # Getting Started with Create React App
 

@@ -1,0 +1,27 @@
+
+.updated {
+    height:100% !important;
+    box-shadow: none;
+    text-align: center;
+}
+
+#submit {
+    color:white !important;
+    margin-top:1em;
+    vertical-align: center;
+    text-align:center;
+    background-color: #14B28B;
+    border-radius: 10px;
+    box-shadow: none;
+    padding-bottom: 80%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:5%;
+}
+
+submit>h1 {
+    padding-top: 50%;
+}

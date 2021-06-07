@@ -41,6 +41,12 @@ ul {
   overflow: hidden; 
 }
 
+/* bring login and signup title down a bit  */
+ form > ul {
+  padding-top:1.5em;
+
+}
+
 li {
   display: inline-flex;  
 }

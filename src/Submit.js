@@ -7,28 +7,34 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import './styles/contactForm.css';
+import './styles/submit.css';
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
-  } from "react-router-dom";
+    Link,
+  } from "react-router-dom"
 
 
-
- 
 function Submit() {
 
-    console.log ("am I a joke to you")
-  
+    // timer function to return to landing screen
+    setTimeout(backHome,6000)
+    function backHome () {
+        window.location = "/speech"
+    }
+
   return (
 
-        <Container>
-        <Jumbotron><h1>Mad Lads</h1></Jumbotron>
-        </Container>
+        <div className = "updated">
+            <div id="submit"><h1>Contact Details Updated</h1>
+            <br></br>
+            <p>Your nominated contacts as well as your medical details have been updated. You don't need to do anything else. The phone will send the information when you use the activation phrase.</p>
+            
+            </div>
+        </div>
   )
-}
+}   
  
 export default Submit;
