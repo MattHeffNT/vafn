@@ -1,0 +1,99 @@
+.container-fluid {
+  /* text-align:center !important; */
+  margin-bottom: 5em;
+}
+
+
+
+/* add drop shadow to login form  */
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 5em;
+}
+
+.jumbotron {
+  /* background-color: rgb(202, 202, 202); */
+  padding-bottom:10px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #AA5CB2;
+}
+
+.jumbotron>h1 {
+  text-align: center;
+  padding-top:1em;
+}
+
+form {
+  padding-bottom:3em;
+}
+
+/* seperate out the elements in the form */
+.form-group {
+  margin:15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  margin-top: -5em;
+}
+
+.back {
+  font-size: 55px;
+}
+
+li {
+  display: inline-block;
+
+}
+
+li>h4 {
+  color:black;
+}
+
+/* Log in */
+ul > li:nth-child(1) {
+  display: inline-block;  
+  margin-left: 1em;
+}
+
+/* signup  */
+ul > li:nth-child(2) {
+  display: inline-block;  
+
+  margin-right:1px;
+
+}
+
+
+ul {
+  
+}
+
+/* labels in the form  */
+.form-label {
+  margin-top:1em;
+}
+
+input {
+  border-bottom:solid;
+}
+
+.form-check {
+  margin-top:1em;
+}
+
+/* login button  */
+#login {
+  margin-top:1em;
+  background-color:#AA5CB2;
+  border-radius: 15px;
+  border-color:#AA5CB2;
+  width:100%;
+}

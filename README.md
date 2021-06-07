@@ -1,3 +1,5 @@
+Changing to prototype (wizard of oz) for project
+
 link to site
 https://mattheffnt.github.io/QR/
 

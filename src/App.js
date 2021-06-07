@@ -1,22 +1,36 @@
 import React from 'react';
-import BarcodeScannerComponent from "react-webcam-barcode-scanner";
+import Dictaphone from './Speech.js';
+import Landing from './landing';
+import Contact from './contact';
+import Submit from './Submit';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+
  
 function App() {
- 
-  const [ data, setData ] = React.useState('Not Found');
- 
+  
   return (
-    <>
-      <BarcodeScannerComponent
-        width={500}
-        height={500}
-        onUpdate={(err, result) => {
-          if (result) setData(result.text)
-          else setData('Not Found')
-        }}
-      />
-      <p>{data}</p>
-    </>
+
+    <div className="component">
+        <Router>
+        <Switch>
+            <Route path="/" exact>
+            <Landing />
+            </Route>
+            <Route path="/contact" component = {Contact}>
+            </Route>
+
+            <Route path="/contact" component = {Submit}>
+            </Route>
+        </Switch>
+      </Router>
+    </div>
   )
 }
  
