@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import './styles/landing.css';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link,
