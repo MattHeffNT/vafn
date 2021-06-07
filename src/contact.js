@@ -21,6 +21,25 @@ import {
 
 function Contact () {
 
+    sessionStorage.clear()
+
+    function store (e) {
+
+        let contactperson = document.querySelector('#formContactPerson').value
+        let contactdetails = document.querySelector('#formContactDetails').value
+        let medical = document.querySelector('#formMedicalConditions').value
+
+        if (contactperson == "" || contactdetails == "" || medical == "") {
+            e.preventDefault()
+        } else {
+            sessionStorage.setItem('contact',contactperson);
+            sessionStorage.setItem('details',contactdetails);
+            sessionStorage.setItem('medical',medical);
+        }
+    }
+
+
+
 
     return (
 
@@ -46,7 +65,7 @@ function Contact () {
                     <Form.Control type="text" placeholder="enter details of any medical conditions"/>
                 </Form.Group>
 
-                <Link to="/submit"><Button variant="primary" type="submit" id = "login">
+                <Link to="/submit"><Button onClick={store} variant="primary" type="submit" id = "login">
                     Submit
                 </Button>
                 </Link>

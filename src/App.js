@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Dictaphone from './Speech.js';
 import Submit from './Submit';
 import Landing from './landing';
@@ -24,6 +25,7 @@ function App() {
         <Switch>
             <Route exact path="/" component = {Landing} >
             <Landing />
+
             </Route>
             <Route path="/contact" component = {Contact}>
             </Route>
@@ -32,6 +34,7 @@ function App() {
             </Route>
 
             <Route path="/speech" component = {Dictaphone}>
+            <Dictaphone />
             </Route>
 
         </Switch>

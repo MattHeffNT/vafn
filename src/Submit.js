@@ -12,18 +12,21 @@ import './styles/submit.css';
 import {
     HashRouter as Router,
     Switch,
+    useHistory,
     Route,
     Link,
   } from "react-router-dom"
 
-
 function Submit() {
 
+  let history = useHistory();
+  
     // timer function to return to landing screen
-    setTimeout(backHome,6000)
-    function backHome () {
-        window.location = "/#/speech"
+    setTimeout(gotoSpeech,6000)
+    function gotoSpeech () {
+      history.push("/speech")
     }
+ 
 
   return (
 
