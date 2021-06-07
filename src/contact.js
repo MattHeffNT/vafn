@@ -11,7 +11,7 @@ import {IoIosArrowRoundBack} from 'react-icons/io'
 import './styles/contactForm.css';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link

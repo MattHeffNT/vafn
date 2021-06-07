@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button';
 import './styles/submit.css';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link,
@@ -22,7 +22,7 @@ function Submit() {
     // timer function to return to landing screen
     setTimeout(backHome,6000)
     function backHome () {
-        window.location = "/speech"
+        window.location = "/#/speech"
     }
 
   return (

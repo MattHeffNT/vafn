@@ -10,7 +10,7 @@ import Container from 'react-bootstrap/Container';
 import {IoIosArrowRoundBack} from 'react-icons/io';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link

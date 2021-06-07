@@ -6,7 +6,7 @@ import Contact from './contact';
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
@@ -22,7 +22,7 @@ function App() {
     <div className="component">
         <Router>
         <Switch>
-            <Route path="/" exact>
+            <Route exact path="/" component = {Landing} >
             <Landing />
             </Route>
             <Route path="/contact" component = {Contact}>
