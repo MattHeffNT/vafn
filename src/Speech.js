@@ -28,7 +28,7 @@ import {
 } from "react-router-dom";
 
 
-const keywords = [{ builtin: 'contact nominee', sensitivity: 0.65 }];
+const keywords = [{ builtin: 'Picovoice', sensitivity: 0.65 }];
 
 // const keywords = [{ custom: 'Picovoice', sensitivity: 0.65 }];
 
