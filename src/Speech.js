@@ -1,19 +1,30 @@
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
-
+import {IoIosArrowRoundBack} from 'react-icons/io';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function Dictaphone ()  {
 
-    const { transcript, resetTranscript } = useSpeechRecognition()
-
-    // start listening when document loads
+    const { finalTranscript, resetTranscript } = useSpeechRecognition()
 
     // Update the document title using the browser API
-    let speech = SpeechRecognition.startListening()
+    useEffect(()=>{
 
+      let startRecording = () => {
+        let speech = SpeechRecognition.startListening();
+      }
+        startRecording()
+    })
+
+    // console.log(finalTranscript)
 
     let stopTranscript = () => {
       SpeechRecognition.stopListening()
@@ -24,50 +35,32 @@ function Dictaphone ()  {
       return null
     }
 
-    
-    // 'this' refers to the newly created element
-    if (transcript === "OK Google test") {console.log ("phrase activated")
+    if (finalTranscript === "OK Google test") {
 
-      setTimeout (() => {
+        let activate = () => {
+          console.log (finalTranscript)
 
-      document.querySelector('body').innerHTML = 
-      `
-        <h2> Sent </h2>
-      `
-      },1000)
-
-        
-    } else {
-        document.querySelector('body').style = "background-color:white;"
+          
+        }
+        activate();
     }
     
-    // reset the transcript after 3 seconds 
-    // function reset () {
-    //   resetTranscript
-    //   console.log("reached")
-    // }
-
-    // setTimeout(reset,3000)
-
-
-
     return (
-      <div>
-        {/* <document onLoad={SpeechRecognition.startListening}>Start</document> */}
-        {/* <button onClick={stopTranscript}>Stop</button> */}
-        {/* <button onClick={resetTranscript}>Reset</button> */}
-
-        {/* <Jumbotron><h1>Voice Assisted Family Notification</h1></Jumbotron> */}
-
-        
+     
         <Container fluid>
+
+            {/* back arrow icon  */}
+            <Link to="/contact">
+            <li><IoIosArrowRoundBack className="back"/></li>
+            </Link>
+
           <Jumbotron>
             <h1>Voice Activated Family Notification</h1>
+            {finalTranscript}
           </Jumbotron>
 
-          <div className="transcript-cont">{transcript}</div>
+          {/* <div className="transcript-cont">{transcript}</div> */}
         </Container>
-      </div>
   
     )
   }
