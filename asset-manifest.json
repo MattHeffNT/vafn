@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vafn/static/css/main.d5ca2859.chunk.css",
-    "main.js": "/vafn/static/js/main.23579358.chunk.js",
-    "main.js.map": "/vafn/static/js/main.23579358.chunk.js.map",
+    "main.js": "/vafn/static/js/main.55e7534c.chunk.js",
+    "main.js.map": "/vafn/static/js/main.55e7534c.chunk.js.map",
     "runtime-main.js": "/vafn/static/js/runtime-main.c9a04a1d.js",
     "runtime-main.js.map": "/vafn/static/js/runtime-main.c9a04a1d.js.map",
     "static/css/2.800be05e.chunk.css": "/vafn/static/css/2.800be05e.chunk.css",
@@ -13,13 +13,14 @@
     "index.html": "/vafn/index.html",
     "static/css/2.800be05e.chunk.css.map": "/vafn/static/css/2.800be05e.chunk.css.map",
     "static/css/main.d5ca2859.chunk.css.map": "/vafn/static/css/main.d5ca2859.chunk.css.map",
-    "static/js/2.719a7ef5.chunk.js.LICENSE.txt": "/vafn/static/js/2.719a7ef5.chunk.js.LICENSE.txt"
+    "static/js/2.719a7ef5.chunk.js.LICENSE.txt": "/vafn/static/js/2.719a7ef5.chunk.js.LICENSE.txt",
+    "static/media/contact-nominee__en_windows_2021-07-07-utc_v1_9_0.5715e180.ppn": "/vafn/static/media/contact-nominee__en_windows_2021-07-07-utc_v1_9_0.5715e180.ppn"
   },
   "entrypoints": [
     "static/js/runtime-main.c9a04a1d.js",
     "static/css/2.800be05e.chunk.css",
     "static/js/2.719a7ef5.chunk.js",
     "static/css/main.d5ca2859.chunk.css",
-    "static/js/main.23579358.chunk.js"
+    "static/js/main.55e7534c.chunk.js"
   ]
 }
