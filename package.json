@@ -1,6 +1,6 @@
 {
-  "homepage": "https://mattheffnt.github.io/",
-  "name": "qr",
+  "homepage": "https://mattheffnt.github.io/vafn",
+  "name": "vafn",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
