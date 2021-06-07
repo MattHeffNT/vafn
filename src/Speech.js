@@ -1,9 +1,14 @@
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+// import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+
+import { PorcupineWorkerFactory } from '@picovoice/porcupine-web-en-worker';
+import { usePorcupine } from '@picovoice/porcupine-web-react';
+
 import React, { useEffect,useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import {IoIosArrowRoundBack} from 'react-icons/io';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,19 +24,23 @@ import  ModalFooter from 'react-bootstrap/ModalFooter';
 import  Button from 'react-bootstrap/Button';
 import Sent from './sent';
 
+const keywords = [{ builtin: 'Picovoice', sensitivity: 0.65 }];
 
-function Dictaphone ()  {
+function Dictaphone (props)  {
 
-    const { transcript, resetTranscript } = useSpeechRecognition()
+    const keywordEventHandler = keywordLabel => {
+      console.log(`Porcupine detected ${keywordLabel}`);
+    };
+
 
     // Update the document title using the browser API
-    useEffect(()=>{
 
-      let startRecording = () => {
-        let speech = SpeechRecognition.startListening();
-      }
-        startRecording()
-    })
+
+      // let startRecording = () => {
+      //   let speech = SpeechRecognition.startListening();
+      // }
+      //   startRecording()
+
 
     // Modal variables
 
@@ -39,27 +48,27 @@ function Dictaphone ()  {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    let stopTranscript = () => {
-      SpeechRecognition.stopListening()
-      console.log ("stop ")
-    }
+    // let stopTranscript = () => {
+    //   SpeechRecognition.stopListening()
+    //   console.log ("stop ")
+    // }
 
-    if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-      return null
-    }
+    // if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+    //   return null
+    // }
 
-    if (transcript === "OK Google test") {
+    // if (finalTranscript  == "OK Google test") {
 
-        let activate = () => {
-          console.log (transcript)
-        }
+    //     let activate = () => {
+    //       console.log (finalTranscript )
+    //     }
+        
+        // call modal
+        // handleShow();
+        // activate();
 
         
-        handleShow();
-        activate();
-
-        // call modal
-    }
+    
     
     return (
      
