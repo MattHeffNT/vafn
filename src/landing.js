@@ -14,6 +14,7 @@ import {
     useRouteMatch,
     useParams
   } from "react-router-dom"
+import { render } from '@testing-library/react';
 
 function Landing () {
 
@@ -21,14 +22,20 @@ function Landing () {
     let password = document.querySelector('#formBasicPassword')
     let checkbox = document.querySelector('#showPW');
 
-    // show password if box checked 
-    let handleChange = () => {
-        if (checkbox.checked) {
-            password.type = 'text';
-        } else {
-            password.type = 'password';
-        }
-    }
+
+
+
+    // // show password if box checked 
+    // let handleChange = () => {
+        
+    //     if (checkbox.checked) {
+    //         password.type = 'text';
+    //     } else {
+    //         password.type = 'password';
+    //     }
+    //     console.log ("hello world")
+        
+    // }
 
     return (
 
@@ -41,7 +48,6 @@ function Landing () {
     {/* form heading  */}
    <ul><li><h2>Log in</h2></li><li>or sign up</li></ul>
 
-   
     <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email"/>
@@ -54,10 +60,11 @@ function Landing () {
 
     {/* check boxes  */}
     <Form.Group controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" id ="showPW" label="Show password" onChange = {handleChange} />
+        <Form.Check type="checkbox" id ="showPW" label="Show password"  defaultChecked/>
         <Form.Check type="checkbox" label="Keep me logged in" />
     </Form.Group>
 
+    {/* onChange = {handleChange} */}
 
 {/* 
     add function to pass value to local storage....this will be used as token
