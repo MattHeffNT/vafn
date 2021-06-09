@@ -18,6 +18,17 @@ import {
 function Landing () {
 
     let { path, url } = useRouteMatch();
+    let password = document.querySelector('#formBasicPassword')
+    let checkbox = document.querySelector('#showPW');
+
+    // show password if box checked 
+    let handleChange = () => {
+        if (checkbox.checked) {
+            password.type = 'text';
+        } else {
+            password.type = 'password';
+        }
+    }
 
     return (
 
@@ -43,9 +54,10 @@ function Landing () {
 
     {/* check boxes  */}
     <Form.Group controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Show password" />
+        <Form.Check type="checkbox" id ="showPW" label="Show password" onChange = {handleChange} />
         <Form.Check type="checkbox" label="Keep me logged in" />
     </Form.Group>
+
 
 {/* 
     add function to pass value to local storage....this will be used as token
