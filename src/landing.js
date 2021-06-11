@@ -8,34 +8,15 @@ import './styles/landing.css';
 
 import {
     HashRouter as Router,
-    Switch,
-    Route,
     Link,
-    useRouteMatch,
-    useParams
   } from "react-router-dom"
-import { render } from '@testing-library/react';
+
 
 function Landing () {
 
-    let { path, url } = useRouteMatch();
-    let password = document.querySelector('#formBasicPassword')
-    let checkbox = document.querySelector('#showPW');
+  
 
-
-
-
-    // // show password if box checked 
-    // let handleChange = () => {
-        
-    //     if (checkbox.checked) {
-    //         password.type = 'text';
-    //     } else {
-    //         password.type = 'password';
-    //     }
-    //     console.log ("hello world")
-        
-    // }
+    const [isInputVisible, setIsInputVisible] = useState(false);
 
     return (
 
@@ -53,25 +34,21 @@ function Landing () {
         <Form.Control type="email" placeholder="Enter email"/>
     </Form.Group>
 
+    {/* password input text */}
     <Form.Group controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password"/>
+        <Form.Control type={isInputVisible ? "text" : "password"} placeholder="Password"></Form.Control> 
     </Form.Group>
 
     {/* check boxes  */}
     <Form.Group controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" id ="showPW" label="Show password"  defaultChecked/>
+        <Form.Check type="checkbox" id ="showPW" label="Show password" onClick ={() => setIsInputVisible(!isInputVisible)} />
+
+
         <Form.Check type="checkbox" label="Keep me logged in" />
     </Form.Group>
 
-    {/* onChange = {handleChange} */}
 
-{/* 
-    add function to pass value to local storage....this will be used as token
-    for prototype to keep user logged in.....(add logout button on other pages)
-    that wil reset the local storage value to 0 (which will take back to landing page) */}
-
- 
     <Link to="/contact"><Button variant="primary" type="submit" id = "login">
         Log in
     </Button>
