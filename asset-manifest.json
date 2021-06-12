@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/vafn/static/css/main.d5ca2859.chunk.css",
-    "main.js": "/vafn/static/js/main.eb58e7f9.chunk.js",
-    "main.js.map": "/vafn/static/js/main.eb58e7f9.chunk.js.map",
-    "runtime-main.js": "/vafn/static/js/runtime-main.c9a04a1d.js",
-    "runtime-main.js.map": "/vafn/static/js/runtime-main.c9a04a1d.js.map",
+    "main.css": "/vafn/static/css/main.b7eceaf4.chunk.css",
+    "main.js": "/vafn/static/js/main.f7ed270e.chunk.js",
+    "main.js.map": "/vafn/static/js/main.f7ed270e.chunk.js.map",
+    "runtime-main.js": "/vafn/static/js/runtime-main.7bbea523.js",
+    "runtime-main.js.map": "/vafn/static/js/runtime-main.7bbea523.js.map",
     "static/css/2.800be05e.chunk.css": "/vafn/static/css/2.800be05e.chunk.css",
-    "static/js/2.f1c8c719.chunk.js": "/vafn/static/js/2.f1c8c719.chunk.js",
-    "static/js/2.f1c8c719.chunk.js.map": "/vafn/static/js/2.f1c8c719.chunk.js.map",
-    "static/js/3.cbb19af3.chunk.js": "/vafn/static/js/3.cbb19af3.chunk.js",
-    "static/js/3.cbb19af3.chunk.js.map": "/vafn/static/js/3.cbb19af3.chunk.js.map",
+    "static/js/2.f8a14dda.chunk.js": "/vafn/static/js/2.f8a14dda.chunk.js",
+    "static/js/2.f8a14dda.chunk.js.map": "/vafn/static/js/2.f8a14dda.chunk.js.map",
+    "static/js/3.5b37df93.chunk.js": "/vafn/static/js/3.5b37df93.chunk.js",
+    "static/js/3.5b37df93.chunk.js.map": "/vafn/static/js/3.5b37df93.chunk.js.map",
     "index.html": "/vafn/index.html",
     "static/css/2.800be05e.chunk.css.map": "/vafn/static/css/2.800be05e.chunk.css.map",
-    "static/css/main.d5ca2859.chunk.css.map": "/vafn/static/css/main.d5ca2859.chunk.css.map",
-    "static/js/2.f1c8c719.chunk.js.LICENSE.txt": "/vafn/static/js/2.f1c8c719.chunk.js.LICENSE.txt",
+    "static/css/main.b7eceaf4.chunk.css.map": "/vafn/static/css/main.b7eceaf4.chunk.css.map",
+    "static/js/2.f8a14dda.chunk.js.LICENSE.txt": "/vafn/static/js/2.f8a14dda.chunk.js.LICENSE.txt",
     "static/media/contact-nominee__en_windows_2021-07-07-utc_v1_9_0.5715e180.ppn": "/vafn/static/media/contact-nominee__en_windows_2021-07-07-utc_v1_9_0.5715e180.ppn"
   },
   "entrypoints": [
-    "static/js/runtime-main.c9a04a1d.js",
+    "static/js/runtime-main.7bbea523.js",
     "static/css/2.800be05e.chunk.css",
-    "static/js/2.f1c8c719.chunk.js",
-    "static/css/main.d5ca2859.chunk.css",
-    "static/js/main.eb58e7f9.chunk.js"
+    "static/js/2.f8a14dda.chunk.js",
+    "static/css/main.b7eceaf4.chunk.css",
+    "static/js/main.f7ed270e.chunk.js"
   ]
 }
