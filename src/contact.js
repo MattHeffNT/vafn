@@ -24,9 +24,10 @@ function Contact() {
             contactdetails.value == '' ||
             medical.value == ''
         ) {
+            // prevent form from submitting
             e.preventDefault();
 
-            // some feedback if person doesn't enter details
+            // some visual feedback if person doesn't enter details
             contactperson.classList.add('error');
             contactdetails.classList.add('error');
             medical.classList.add('error');
@@ -39,9 +40,9 @@ function Contact() {
             }, 1000);
         } else {
             // if details entered store in local session storage to retrieve (note this is client side)
-            sessionStorage.setItem('contact', contactperson);
-            sessionStorage.setItem('details', contactdetails);
-            sessionStorage.setItem('medical', medical);
+            sessionStorage.setItem('contact', contactperson.value);
+            sessionStorage.setItem('details', contactdetails.value);
+            sessionStorage.setItem('medical', medical.value);
         }
     }
 
