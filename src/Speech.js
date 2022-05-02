@@ -63,8 +63,7 @@ function Dictaphone() {
                 </Modal.Header>
 
                 <Modal.Body>
-                    Your information about {medical} has been sent to
-                    {contactperson}
+                    `Your information about {medical} has been sent to {contactperson}`
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
